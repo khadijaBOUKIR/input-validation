@@ -64,6 +64,9 @@ html,body{
     display: flex;
     justify-content: flex-start;
     margin-left: 3px;
+
+
+
 }
 .button-field{
     width: 266px;
@@ -74,8 +77,10 @@ html,body{
     border-radius: 5px;
     border: 1px solid white;
     font-family: auto;
-    animation: wrapper 2s linear 2s infinite alternate;
-    
+
+    animation-name: wrapper;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
 }
 
 .button-field:focus, .button-field:active{
@@ -83,10 +88,8 @@ html,body{
 }
 
 .button-field:hover{
-    background-color: white;
     cursor : pointer;
-    transform: scale(1.01, 1.1);    
     background-color: rgba(204, 255, 0, 0.58);
-    font-size: 21px;  
-    animation-play-state: paused; 
+    font-size: 21px;
+    transform: scale(1.01, 1.1);
 }
