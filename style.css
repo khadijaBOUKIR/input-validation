@@ -5,8 +5,9 @@ html,body{
     width: 100%;
     height: 100%;
     margin: auto;
-    background: linear-gradient(248.55deg, rgba(204, 255, 0, 0.58) 0.4%, #FD0000 100%);
+    background-image: url("./imgs/background-image.jpg");
 }
+
 .content{
     display: flex;
     justify-content: center;
@@ -30,17 +31,33 @@ html,body{
     position: relative;
     border-radius: 5px;
     padding-left: 40px;
+    background-color: black;
+    border: 2px solid yellow;
     color: white;
+    font-family: robotoblack;
+    font-size: 19px;
 }
 .position-icone{
-    color: rgba(204, 255, 0, 0.58);
+    color: yellow;
     position: absolute;
     top: 6px;
     left: 6px;
     font-size: 25px;
 }
 .input-field:hover{
+    border: 2px solid red;
+}
+
+.input-field:hover ~ .position-icone{
     background-color: black;
+    color: red;
+}
+.input-field:focus, .input-field:active{
+    outline: 0 !important;
+    border: 2px solid red;
+}
+ .input-field:focus ~ .position-icone{
+    color : red;
 }
 .wrapper-button{
     width: 100%;
@@ -53,10 +70,23 @@ html,body{
     height: 39px;
     font-size: 18px;
     background-color: rgba(204, 255, 0, 0.58);
-    color: #FD0000;
+    color: #000;
     border-radius: 5px;
+    border: 1px solid white;
+    font-family: auto;
+    animation: wrapper 2s linear 2s infinite alternate;
+    
 }
+
+.button-field:focus, .button-field:active{
+    outline: 0 !important;
+}
+
 .button-field:hover{
     background-color: white;
     cursor : pointer;
+    transform: scale(1.01, 1.1);    
+    background-color: rgba(204, 255, 0, 0.58);
+    font-size: 21px;  
+    animation-play-state: paused; 
 }

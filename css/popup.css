@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.popup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0 0 0 / 60%);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.d-none{
+    display: none !important;
+}
+.popin{
+    width: 40%;
+    height: 50%;
+    position: relative;
+    background-color: rgb(251 251 251 / 85%);
+    box-shadow: 0px 0px 12px 0px #000000;
+    border-radius: 11px;
+}
+.close{
+    position: absolute;
+    right: 9px;
+    top: 2px;
+}
+.txt-popin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    text-shadow: 0px 0px 2px rgb(9 9 9);
+    font-family: ambleregular;
+}
+
+.close-icone{
+    color: red;
+    font-size: 30px;
+}
+
+.close-icone:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.close-icone:hover > .txt-popin{
+    color: black !important;
+}

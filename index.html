@@ -2,23 +2,35 @@
 <html>
 
 <head>
+
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/popup.css" />
     <title>input validation</title>
 </head>
 
 <body>
-<div class="content">
-    <div class="wrapper-input">
-        <div class="wrapper-input-icon">
-            <input class="input-field" />
-            <i class="fa fa-user position-icone"></i>
-        </div> 
+    <div class="content">
+        <div class="wrapper-input">
+            <div class="wrapper-input-icon">
+                <input class="input-field" value="" placeholder="Écrire quelque chose" />
+                <i class="fa fa-user position-icone"></i>
+            </div>
+        </div>
+        <div class="wrapper-button"><button id="button-show-popup" class="button-field">valider</button></div>
     </div>
-    <div class="wrapper-button"><button class="button-field">valider</button></div>
-</div>
-<script src="./app.js"></script>
+    <div class="popup d-none">
+        <div class="popin">
+            <div class="close">
+                <i class="fa fa-times close-icone"></i>
+            </div>
+            <div class="txt-popin">khadija boukir</div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>
