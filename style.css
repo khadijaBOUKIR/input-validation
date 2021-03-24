@@ -6,6 +6,8 @@ html,body{
     height: 100%;
     margin: auto;
     background-image: url("./imgs/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content{
